@@ -8,7 +8,8 @@
           to="mappa"
           class="button--grey mt-8"
           rel="noopener noreferrer"
-        >Mappa situazione climatica attuale</nuxt-link>
+          >Mappa situazione climatica attuale</nuxt-link
+        >
       </div>
     </div>
   </div>

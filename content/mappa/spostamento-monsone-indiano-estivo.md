@@ -1,6 +1,6 @@
 ---
 title: Spostamento del monsone indiano estivo
-description: 
+descriptionBody: 
     - I monsoni sono venti periodici che condizionano le precipitazioni atmosferiche dando origine, dove agiscono, a due stagioni che si alternano nel corso dell’anno a seconda della direzione da cui provengono:<ul><li>stagione umida e piovosa, quando soffiano dall’Oceano verso l’entroterra":" l’aria del continente asiatico surriscaldato dal sole risucchia l’aria carica di umidità che giunge dall’oceano Indiano. 
     - In questa stagione le piogge sono abbondanti.</li><li>stagione secca, quando i venti soffiano dalla terra verso l’Oceano":" l’aria fresca e secca che proviene dall’interno dell’Asia si inserisce sotto l’aria calda dell’oceano Indiano. Questa ciclicità è determinante per la vita di persone e animali, ma negli ultimi decenni a causa dei cambiamenti climatici, i venti monsonici sono diventati sempre più irregolari e tardivi concentrando la piogge in meno giorni, durando meno ed essendo più violente.</li></ul>
 consequences:
