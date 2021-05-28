@@ -6,7 +6,8 @@ descriptionBody:
     - Recenti studi hanno dimostrato che oltre alla deforestazione e alla frammentazione della foresta, a causa delle crescenti temperature e siccità, si assiste a un progressivo rallentamento della crescita e a un aumento della mortalità degli alberi con conseguente minor stoccaggio del carbonio.
 consequences:
     description: Transizione dell’area verso la Savana con grave perdita di biodiversità sia a livello di habitat che vegetale e animale. Diminuzione delle precipitazioni e aumento di CO2 nell’atmosfera.
+index: 3
 choords:
-    x: 651
-    y: 556
+    x: 611
+    y: 550
 ---

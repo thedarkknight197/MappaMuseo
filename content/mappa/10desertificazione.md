@@ -6,7 +6,8 @@ descriptionBody:
     - Per quanto riguarda i fattori climatici, l’aumento delle temperature che provoca una forte evapotraspirazione unità alla scarsità di pioggia causano la diminuzione di umidità dai terreni e dalle piante.
 consequences:
     description: Gli effetti principali si vedranno sull’uso del terreno quali una minore produzione alimentare, infertilità del suolo che possono portare a conseguenze demografiche ed economiche, costringendo la popolazione a migrare. Ma la desertificazione può a sua volta può influire sui cambiamenti climatici":" il degrado del suolo dà luogo all’emissione nell’atmosfera di gas a effetto serra, comportando il rischio di ulteriori cambiamenti climatici e di perdita della biodiversità. La biomassa e gli stock di carbonio nel suolo sono esposti al rischio di dispersione nell’atmosfera per effetto di tempeste, incendi boschivi e focolai di organismi nocivi.
+index: 10
 choords:
-    x: 1543
-    y: 175
+    x: 959 
+    y: 388
 ---

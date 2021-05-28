@@ -6,7 +6,8 @@ descriptionBody:
     - Attualmente la perdita di ghiaccio dal WAIS è compensata dalla estensione (o non arretramento) di altre regioni dell’Antartide grazie alla circolazione dell'Oceano Australe.
 consequences:
     description: Se collassasse la calotta glaciale antartica per effetto di eventi a cascata innescati dal continuo ritiro della linea di messa a terra nella regione occidentale, potrebbe causare un innalzamento del livello dei mari di 5 metri. La tendenza alla riduzione della salinità nelle acque antartiche alimentate dalla fusione del ghiaccio influenza la densità delle acque profonde e molto fredde che guidano le correnti oceaniche influenzando il clima in superficie ma soprattutto, potrebbero alterarsi i tempi dei cicli biologici iniziando dal fitoplancton, la base fondamentale della rete alimentare antartica.
+index: 2
 choords:
-    x: 207
-    y: 831
+    x: 231 
+    y: 943
 ---

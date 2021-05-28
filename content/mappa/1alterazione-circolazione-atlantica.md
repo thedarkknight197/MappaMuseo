@@ -6,7 +6,8 @@ descriptionBody:
     - Questo rende l'acqua più leggera e quindi meno capace di andare in profondità rallentando così l'intero motore della circolazione.
 consequences:
     description: Mentre nell'Atlantico settentrionale si potrebbe generare un generale raffreddamento, minore evaporazione e quindi meno precipitazioni, nell'Atlantico meridionale si assisterebbe a un riscaldamento con conseguente aumento delle inondazioni, delle emissioni di metano e della siccità, e, di conseguenza, un impatto negativo sulla produzione alimentare e sui sistemi umani. Potremmo osservare inoltre uno spostamento della zona di convergenza intertropicale, la grande area di bassa pressione che circonda la Terra vicino all'equatore.
+index: 1
 choords:
-    x: 784
-    y: 374
+    x: 711 
+    y: 316
 ---

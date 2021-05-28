@@ -7,7 +7,11 @@
       Torna a Home</nuxt-link
     >
     <img
-      src="~/assets/WorldMap1.jpg"
+      :src="
+        choose == -1
+          ? require('~/assets/MAP.jpeg')
+          : require(`~/assets/MAPPE/MAP${choose}.jpg`)
+      "
       width="1920px"
       height="1080px"
       alt="World Map"
@@ -18,11 +22,11 @@
       <semafori-card
         :close="chooseNum"
         :semaforo="semaforo"
-        :visible="isVisible(i)"
-        class="absolute w-3/4 left-48 top-1/4"
+        :visible="isVisible(semaforo)"
+        class="absolute position-text"
       ></semafori-card>
     </div>
-    <map name="map">
+    <map v-if="choose == -1" name="map">
       <area
         v-for="(semaforo, i) in semafori"
         :id="i"
@@ -34,7 +38,7 @@
         data-toggle="collapse"
         data-target="#collapseLIKES"
         data-text="Collapse"
-        @click="chooseNum(i)"
+        @click="chooseNum(semaforo.index)"
       />
     </map>
   </div>
@@ -44,6 +48,7 @@
 import Vue from 'vue'
 import { IContentDocument } from '@nuxt/content/types/content'
 import { Context } from '@nuxt/types'
+import Point from '~/types/Point'
 
 export default Vue.extend({
   name: 'Mappa',
@@ -56,7 +61,9 @@ export default Vue.extend({
       description: us.descriptionBody,
       consequences: us.consequences,
       choords: us.choords,
+      index: us.index,
     }))
+
     return { semafori }
   },
   data() {
@@ -66,25 +73,32 @@ export default Vue.extend({
   },
   methods: {
     getPosition(e: any) {
-      console.log('hover')
       console.log('x: ' + e.clientX + ' y: ' + e.clientY)
     },
     chooseNum(i: number): void {
-      this.choose = this.choose == i ? -1 : i
+      this.choose = this.choose === i ? -1 : i
     },
-    isVisible(i: number): Boolean {
-      return this.choose == i
+    isVisible(point: Point): Boolean {
+      return this.choose === point.index
     },
   },
 })
 </script>
 
-<style>
+<style scoped>
 area:hover {
   cursor: pointer;
 }
 
 area {
   background: red;
+}
+
+.position-text {
+  overflow-y: auto;
+  top: 44%;
+  right: 5%;
+  width: 58%;
+  height: 54%;
 }
 </style>

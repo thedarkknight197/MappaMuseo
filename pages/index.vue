@@ -4,11 +4,17 @@
       <Logo />
       <!-- <h1 class="title">Vue.js Italia</h1> -->
       <div class="links">
-        <nuxt-link 
+        <nuxt-link
           to="mappa"
           class="button--grey mt-8"
           rel="noopener noreferrer"
           >Mappa situazione climatica attuale</nuxt-link
+        >
+        <nuxt-link
+          to="gioco-simulazione"
+          class="button--grey mt-8"
+          rel="noopener noreferrer"
+          >Gioco simulazione</nuxt-link
         >
       </div>
     </div>

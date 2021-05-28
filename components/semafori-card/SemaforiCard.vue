@@ -1,27 +1,32 @@
 <template>
-  <!-- h-3/5 -->
-  <div v-if="visible" class="bg-gray-50 rounded-xl" style="overflow-y: auto">
+  <div
+    v-if="visible"
+    class="rounded-xl"
+    style="overflow-y: auto; background: rgba(255, 255, 255, 0.75)"
+  >
     <button
-      @click="closeMe()"
       class="rounded-xl border-red-700 hover:border-white hover:text-white hover:bg-red-700 p-3.5 m-3.5 border-2 text-red-700"
+      @click="closeMe()"
     >
       X Chiudi
     </button>
     <div class="p-3.5">
-      <h1 class="text-6xl mb-8">{{ semaforo.title }}</h1>
+      <h1 class="text-5xl font-bold mb-8">{{ semaforo.title }}</h1>
       <p
-        class="text-xl font-light mb-8"
+        class="text-3xl font-light mb-8"
         v-html="reduce(semaforo.description[section])"
       ></p>
       <div class="grid grid-cols-3 gap-4">
         <div>
-          <button class="text-left" v-if="section > 0" @click="section--">
-            <i class="fas fa-arrow-left text-5xl"></i>
+          <button v-if="section > 0" class="text-left" @click="section--">
+            <i class="fas fa-arrow-left text-5xl text-yellow-700"></i>
           </button>
         </div>
         <div>
           <p class="text-center">
-            <nuxt-link to="/" class="text-5xl"><i class="fas fa-home"></i> Home</nuxt-link>
+            <nuxt-link to="/" class="text-5xl"
+              ><i class="fas fa-home"></i> Home</nuxt-link
+            >
           </p>
         </div>
         <div class="text-right">
@@ -29,17 +34,17 @@
             v-if="section < semaforo.description.length - 1"
             @click="section++"
           >
-            <i class="fas fa-arrow-right text-5xl"></i>
+            <i class="fas fa-arrow-right text-5xl text-yellow-700"></i>
           </button>
         </div>
       </div>
     </div>
     <div v-if="section == semaforo.description.length - 1">
       <button
-        @click="show = !show"
         class="rounded-xl border-red-700 hover:border-white hover:text-white hover:bg-red-700 p-3.5 m-3.5 border-2 text-red-700"
+        @click="show = !show"
       >
-        {{ !show ? 'Conseguenze' : 'Chiudi' }}
+        {{ !show ? 'Conseguenze' : 'Nascondi' }}
       </button>
       <div v-if="show == true">
         <div
@@ -52,6 +57,12 @@
             v-html="reduce(conseguenze)"
           ></span>
         </div>
+        <button
+          class="rounded-xl border-red-700 hover:border-white hover:text-white hover:bg-red-700 p-3.5 m-3.5 border-2 text-red-700"
+          @click="closeMe()"
+        >
+          X Chiudi
+        </button>
       </div>
     </div>
   </div>
@@ -88,13 +99,12 @@ export default Vue.extend({
   },
   methods: {
     reduce(data: string): string {
-      console.log(data)
       return data.replace(/["]+/g, '')
     },
     closeMe(): void {
       this.section = 0
       this.show = false
-      this.close()
+      this.close(-1)
     },
   },
 })
